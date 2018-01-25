@@ -1,0 +1,230 @@
+body {
+
+}
+
+.background-image {
+    background-color: #000000;
+    background-image: url("https://audiovisuaali.net/url/img/wallpaper1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    min-height: 110%;
+    min-width: 110%;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    /* z-index: 1; */
+    transform: translate(-50%, -50%);
+}
+
+
+h1 {
+  display: table;
+  margin: 40px auto;
+  padding: 10px 0 0 0;
+  color: #fff;
+  font: 20px Helvetica;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.divider {
+    padding: 20px 0 20px 0;
+}
+
+
+form {
+  display: table;
+  margin: 20px 0 10px 0;
+  width: 350px;
+  max-height: 100%;
+}
+form label {
+  position: relative;
+  display: block;
+}
+form label input {
+  font: 18px Helvetica, Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  border: none;
+  padding: 20px;
+  min-width: 100%;
+  width: auto;
+  margin-bottom: 20px;
+  font-size: 18px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+form label input::-webkit-input-placeholder {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #999;
+  font: 18px Helvetica, Arial, sans-serif;
+}
+form label input:-ms-input-placeholder {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #999;
+  font: 18px Helvetica, Arial, sans-serif;
+}
+form label input::-ms-input-placeholder {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #999;
+  font: 18px Helvetica, Arial, sans-serif;
+}
+form label input::placeholder {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #999;
+  font: 18px Helvetica, Arial, sans-serif;
+}
+form label input:focus, form label input.populated {
+  padding-top: 28px;
+  padding-bottom: 12px;
+}
+form label input:focus::-webkit-input-placeholder, form label input.populated::-webkit-input-placeholder {
+  color: transparent;
+}
+form label input:focus:-ms-input-placeholder, form label input.populated:-ms-input-placeholder {
+  color: transparent;
+}
+form label input:focus::-ms-input-placeholder, form label input.populated::-ms-input-placeholder {
+  color: transparent;
+}
+form label input:focus::placeholder, form label input.populated::placeholder {
+  color: transparent;
+}
+form label input:focus + span, form label input.populated + span {
+  opacity: 1;
+  top: 10px;
+}
+form label span {
+  color: #35dc9b;
+  font: 13px Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+form .center input[type="button"] {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font: 18px Helvetica, Arial, sans-serif;
+  border: none;
+  background: #1aaf75;
+  color: #fff;
+  padding: 16px 40px;
+  width: 125px;
+}
+
+form .center input[type="button"]:hover {
+  background: #109f67;
+}
+
+.center {
+    text-align: center
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.darken {
+    background-color: rgba(0,0,0,0.4);
+    max-width: 100%;
+    padding: 30px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    max-width: 500px;
+    min-width: 300px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    text-align:center;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: #fff !important;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0 0px 0 #fff !important;
+    opacity: 1 !important;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+  height: 132px;
+    padding: 2px 16px;
+    background-color: #3cb879;
+    color: white;
+    text-align: center;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.mainsvg {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+.modal-header img {
+  margin: 10px;
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
